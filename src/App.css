@@ -433,6 +433,11 @@ padding: 1rem;
 .proj-imgbx::hover  {
  cursor: pointer;
 }
+
+[type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
 .proj-imgbx:hover::before {
   height: 100%;
 }
@@ -474,7 +479,6 @@ padding: 1rem;
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #13000c -5.91%, #100432 111.58%);
-  padding: 60px 0 200px 0;
 }
 .contact img {
   width: 92%;

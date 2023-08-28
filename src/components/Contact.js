@@ -50,21 +50,7 @@ export const Contact = () => {
     <section className="contact" id="contacts">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} md={6}>
-        
-          <TrackVisibility>
-    {({ isVisible }) => (
-        <video
-            className={`video-full-width ${isVisible ? "animate__animated animate__zoomIn" : ""}`}
-            src={videoSrc}
-            alt="Video Description"
-            controls
-        />
-    )}
-</TrackVisibility>
-
-
-          </Col>
+         
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
@@ -118,6 +104,22 @@ export const Contact = () => {
                 </div>
               )}
             </TrackVisibility>
+          </Col>
+
+           <Col size={12} md={6}>
+        
+          <TrackVisibility>
+    {({ isVisible }) => (
+        <video
+            className={`video-full-width ${isVisible ? "animate__animated animate__zoomIn" : ""}`}
+            src={videoSrc}
+            alt="Video Description"
+            controls
+        />
+    )}
+</TrackVisibility>
+
+
           </Col>
         </Row>
       </Container>
